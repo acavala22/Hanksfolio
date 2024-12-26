@@ -1,0 +1,156 @@
+<!doctype html>
+<html class ="htmlfilm1" lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Tom Hanks</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body class="bodyfilm1">
+      <div class="content-wrapper">
+         <header class="masthead mb-auto">
+            <div class="inner">
+               <nav class="navbar navbar-expand-md navbar-light poppins-medium navbar-album">
+                  <a class="navbar-brand" href="#">Portfolio</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="./index.html">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="./biografija.html">Biografija</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" href="./kontakt.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="./filmovi.html">Filmovi</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="./nagrade.html">Nagrade</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </header>
+         <main class="mainfilm1">
+            <div class="container kontaktdiv">
+               <div class="row">
+                  <div class="col-lg-6 col-md6 col">
+                     <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                           <div class="col-md-6 mb-3">
+                              <label for="validationCustom01">Ime</label>
+                              <input type="text" class="form-control" id="validationCustom01" value="Marko" required>
+                              <div class="valid-feedback">
+                                 Looks good!
+                              </div>
+                           </div>
+                           <div class="col-md-6 mb-3">
+                              <label for="validationCustom02">Prezime</label>
+                              <input type="text" class="form-control" id="validationCustom02" value="Markovic" required>
+                              <div class="valid-feedback">
+                                 Looks good!
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <div class="col-md-6 mb-3">
+                              <label for="validationCustom03">Grad</label>
+                              <input type="text" class="form-control" id="validationCustom03" required>
+                              <div class="invalid-feedback">
+                                 Please provide a valid city.
+                              </div>
+                           </div>
+                           <div class="col-md-3 mb-3">
+                              <label for="validationCustom04">Država</label>
+                              <select class="custom-select" id="validationCustom04" required>
+                                 <option selected disabled value="">Odaberi...</option>
+                                 <option>...</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                 Please select a valid state.
+                              </div>
+                           </div>
+                           <div class="col-md-3 mb-3">
+                              <label for="validationCustom05">Poštanski broj</label>
+                              <input type="text" class="form-control" id="validationCustom05" required>
+                              <div class="invalid-feedback">
+                                 Please provide a valid zip.
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                              Prihvaćam...
+                              </label>
+                              <div class="invalid-feedback">
+                                 You must agree before submitting.
+                              </div>
+                           </div>
+                        </div>
+                        <button class="btn btn-dark" type="submit">Pošalji</button>
+                     </form>
+                     <script>
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (function() {
+                          'use strict';
+                          window.addEventListener('load', function() {
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Loop over them and prevent submission
+                            var validation = Array.prototype.filter.call(forms, function(form) {
+                              form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                  event.preventDefault();
+                                  event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                              }, false);
+                            });
+                          }, false);
+                        })();
+                     </script>
+                  </div>
+                  <div class="col-lg-6 col-md6 col">
+                     <h2>Kontakt podaci</h2>
+                     <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Adresa : Pavlinska 2, 42000, Varaždin</p>
+                     <p><i class="fa fa-phone" aria-hidden="true"></i>
+                        telefon : 0991231234
+                     </p>
+                  </div>
+               </div>
+               <div class="container kontaktkarta">
+                  <h3>Pronađite nas</h3>
+                  <iframe class="karta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2756.1075063666617!2d16.33551117666584!3d46.307702376764915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4768aad79fc40fe3%3A0x2fd520a80b6873b1!2sFakultet%20organizacije%20i%20informatike%20-%20FOI!5e0!3m2!1shr!2shr!4v1718040985042!5m2!1shr!2shr" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+            </div>
+         </main>
+         <footer class="ostalifooteri mastfoot">
+            <a href="https://twitter.com/">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://facebook.com/">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a> 
+         </footer>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>
